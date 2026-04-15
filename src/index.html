@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PulseMonitor</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Pulse<span>Monitor</span></h1>
+      <div class="status-dot"></div>
+    </header>
+
+    <div class="card">
+      <div class="card-info">
+        <label>CPU</label>
+        <h2 id="cpu-val">0%</h2>
+      </div>
+      <div class="progress-container">
+        <div id="cpu-bar" class="progress-bar"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-info">
+        <label>RAM</label>
+        <h2 id="ram-val">0 / 0 MB</h2>
+      </div>
+      <div class="progress-container">
+        <div id="ram-bar" class="progress-bar ram"></div>
+      </div>
+    </div>
+
+    <button id="opti-btn" class="opti-button">OPTIMISER LA RAM</button>
+    <button id="cache-btn" class="opti-button cache">VIDER LE CACHE</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "build": {
+    "beforeDevCommand": "",
+    "beforeBuildCommand": "",
+    "devPath": "../src",
+    "distDir": "../src",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "PulseMonitor",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false
+    },
+    "bundle": {
+      "active": true,
+      "category": "DeveloperTool",
+      "copyright": "",
+      "externalBin": [],
+      "icon": ["icons/icon.ico"],
+      "identifier": "com.pulse.monitor",
+      "longDescription": "",
+      "resources": [],
+      "shortDescription": "",
+      "targets": "all"
+    },
+    "security": {
+      "csp": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;"
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "height": 400,
+        "resizable": false,
+        "title": "PulseMonitor",
+        "width": 350,
+        "transparent": true,
+        "decorations": true
+      }
+    ]
+  }
+}

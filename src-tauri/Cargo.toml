@@ -1,0 +1,26 @@
+[package]
+name = "pulse-monitor"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tauri = { version = "1.5", features = ["custom-protocol"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sysinfo = "0.29"
+
+
+[build-dependencies]
+tauri-build = { version = "1.5", features = [] }
+
+[features]
+# Cette section est cruciale pour le build final
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
+
+[profile.release]
+panic = "abort" # Réduit la taille du binaire
+codegen-units = 1 # Meilleure optimisation
+lto = true # Link Time Optimization
+incremental = false # Pas d'incrémental en release pour max perf
+opt-level = "s" # Optimisation pour la taille (ou "3" pour la vitesse)
