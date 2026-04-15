@@ -25,7 +25,7 @@ PulseMonitor is a sleek, lightweight system resource monitor designed for Window
 ### Installation
 You can download the latest installer from the [Releases](https://github.com/Saamiiblt/pulse-monitor/releases) page.
 
-1. Download `PulseMonitor_0.1.0_x64-setup.exe`.
+1. Download `PulseMonitor_0.1.0_x64_en-US.msi`.
 2. Run the installer.
 3. Launch **PulseMonitor** from your desktop or start menu.
 
